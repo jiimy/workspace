@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:app": "npm run start -workspace=@workspace/app",
+    "start:nextapp": "npm run dev -workspace=@workspace/nextapp"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/app",
+    "packages/nextapp"
+  ]
+}
