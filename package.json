@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start:app": "npm run start -workspace=@workspace/app",
-    "start:nextapp": "npm run dev -workspace=@workspace/nextapp"
+    "start:nextapp": "npm run dev -workspace=@workspace/nextapp",
+    "start:all": "npm run start -workspaces --if-present"
   },
   "author": "",
   "license": "ISC",
   "workspaces": [
+    "packages/shared",
     "packages/app",
     "packages/nextapp"
   ]
